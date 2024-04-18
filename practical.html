@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+</head>
+<body>
+<?php
+$name="Marc";
+$age=18;
+$grade=7;
+
+echo"My name is ".$name."<br>";
+echo"I am ".$age."<br>";
+echo"I am in grade ".$grade."<br>";
+
+echo"<br><br><br><br>";
+
+
+$username="Marc";
+$confirm_username="Marc";
+$password="Awesome";
+$confirm_password="Awesome";
+
+if($username == $confirm_username && $password == $confirm_password){
+	echo"you have login in";
+}
+else{
+	echo"Please re-enter your details";
+};
+
+
+
+echo"<br><br><br>";
+
+
+
+$text="I LOVE YOU";
+echo trim($text);
+echo "<br>";
+echo strtolower($text);
+
+echo"<br><br><br><br>";
+
+
+
+$favoriteMovies = array(
+    array(
+        "title" => "Inception",
+        "release_year" => 2010,
+        "genre" => "Sci-Fi, Action"
+    ),
+    array(
+        "title" => "The Shawshank Redemption",
+        "release_year" => 1994,
+        "genre" => "Drama"
+    ),
+    array(
+        "title" => "The Dark Knight",
+        "release_year" => 2008,
+        "genre" => "Action, Crime, Drama"
+    )
+);
+
+
+
+echo"<br><br><br>";
+
+
+function calculateRectangleArea($length, $width) {
+    $area = $length * $width;
+    return $area;
+}
+
+$length = 5;
+$width = 3;
+$result = calculateRectangleArea($length, $width);
+echo "The area of the rectangle is: " . $result . " square units";
+
+
+
+?> 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
